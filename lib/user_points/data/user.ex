@@ -3,7 +3,6 @@ defmodule UserPoints.Data.User do
   User schema.
   """
   use Ecto.Schema
-  import Ecto.Changeset
 
   @primary_key {:id, :integer, autogenerate: false}
   schema "users" do
