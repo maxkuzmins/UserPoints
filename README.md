@@ -46,7 +46,7 @@ $ curl localhost:4000/
 ### After points update
 The points update is triggered after 1 minute. Now the result includes up to two users with more points than `max_number`.
 ```
-curl localhost:4000/
+$ curl localhost:4000/
 {"timestamp":"2022-01-01 00:01:01","users":[{"id":401,"points":73},{"id":402,"points":72}]}
 ```
 
