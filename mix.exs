@@ -69,7 +69,6 @@ defmodule UserPoints.MixProject do
       "assets.deploy": ["esbuild default --minify", "phx.digest"],
       build: [
         "setup",
-        "ecto.drop",
         "compile --warnings-as-errors",
         "format --check-formatted",
         "credo",
