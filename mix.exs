@@ -68,8 +68,8 @@ defmodule UserPoints.MixProject do
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test --trace"],
       "assets.deploy": ["esbuild default --minify", "phx.digest"],
       build: [
-        "ecto.drop",
         "setup",
+        "ecto.drop",
         "compile --warnings-as-errors",
         "format --check-formatted",
         "credo",
