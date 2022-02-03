@@ -1,3 +1,4 @@
+[![.github/workflows/build_and_test.yml](https://github.com/maxkuzmins/UserPoints/actions/workflows/build_and_test.yml/badge.svg)](https://github.com/maxkuzmins/UserPoints/actions/workflows/build_and_test.yml)
 # UserPoints 🎯
 It's a Phoenix app that updates User Points in a database table at a regular interval of 1 minute. The app exposes an API endpoint `/` for retrieving a max of 2 users with more than a random number of points. 
 
@@ -5,7 +6,7 @@ It's a Phoenix app that updates User Points in a database table at a regular int
 ### PostgreSQL 14
 The application requires PostgreSQL. 
 
-If you have Docker installed, run it with:
+If you have Docker installed, run the DB with:
 ```
 docker pull postgres && docker run --rm -P --publish 127.0.0.1:5432:5432 --name user-points-pg -e POSTGRES_PASSWORD=mysecretpassword -d postgres
 ```
